@@ -1,3 +1,4 @@
+const fs = require('fs')
 const readDir = new Promise((resolve, reject) => {
     fs.readdir('/', (error, result) => {
       if (error) reject(error);
