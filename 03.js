@@ -9,15 +9,14 @@
 
 for (let i = 1; i <= 3; i++) {
     console.log(i);
-    const a = () =>{
-      return new Promise(resolv => {
+    const hasil = () =>{
+      return new Promise(resolve => {
         setTimeout(() => {
-          resolv()
+          resolve()
         }, 1000);
-        console.log(i)
       })
     }
-    await (a);
+    await (hasil);
   }
   
   console.log('Done')
